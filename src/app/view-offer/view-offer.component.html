@@ -108,13 +108,23 @@
     <mat-accordion>
       <mat-expansion-panel *ngFor="let component of components;  let i = index" [expanded]="step === i" (opened)="setStep(i)" hideToggle="true">
         <mat-expansion-panel-header>
-          <mat-icon>flight_takeoff
-          </mat-icon>
-          <mat-panel-title>
+          <mat-panel-title class="component-header">
+            <!-- icons  -->
+            <mat-icon *ngIf="component.type == 'Flight'">
+              flight
+            </mat-icon>
+            <mat-icon *ngIf="component.type == 'Hotel'">
+              hotel
+            </mat-icon>
+            <mat-icon *ngIf="component.type == 'Car Rental'">
+              directions_car
+            </mat-icon>
             <strong>
               {{component.provider}}
             </strong>
           </mat-panel-title>
+
+          <span class="unit-price">13.66$</span>
           <!-- <mat-panel-description>
             TLV to BGN
           </mat-panel-description> -->
