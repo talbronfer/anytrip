@@ -17,12 +17,12 @@
         </strong>
       </mat-panel-title>
 
-      <span class="unit-price">13.66$</span>
+      <span class="unit-price">0.0$</span>
     </mat-expansion-panel-header>
 
 
 
-    <mat-checkbox class="option-margin">Luggage loss coverage</mat-checkbox>
+    <mat-checkbox class="option-margin"> Luggage loss coverage</mat-checkbox>
     <mat-checkbox class="option-margin">Ticket cancellation</mat-checkbox>
     <mat-checkbox class="option-margin">Delay compensation</mat-checkbox>
 
@@ -36,6 +36,8 @@
 </mat-accordion>
 
 <div class="checkout-footer">
-  <div class="total-price">{{totalPrice}} $</div>
-  <button mat-raised-button color="accent"  (click)="nextStep()">Checkout </button>
+  <div class="checkout-container">
+    <div class="total-price">{{totalPrice}} $</div>
+    <button mat-raised-button color="accent" (click)="finish()"> Checkout </button>
+  </div>
 </div>
