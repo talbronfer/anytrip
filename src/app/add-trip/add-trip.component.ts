@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-add-trip',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddTripComponent implements OnInit {
 
-  constructor() { }
+  public isWaiting : boolean = true;
+
+  constructor(private userService : UserService) {
+
+   }
 
   ngOnInit() {
+    this.userService.currentSession.on('child_changed', (a, b) => {
+      this.isWaiting = false;
+    });
   }
 
 }
