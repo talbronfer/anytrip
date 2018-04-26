@@ -17,7 +17,7 @@ export class AddTripComponent implements OnInit {
       ref.ref.parent.once('value', (result) => {
         this.userService.currentTrip = result.val();
       });
-      // this.userService.addPoliciesToTrip();
+      this.userService.addPoliciesToTrip();
       this.isLoading = false;
       setTimeout(this.navigateToNext(), 1500);
     });
