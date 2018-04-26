@@ -52,14 +52,14 @@ export class UserService {
     {
         name: "Free Hotel Cancellation",
         description: "Cancel your acommodation for any reason, up to 24 hours before check-in",
-        component_types: "hotel",
+        component_type: "hotel",
         compensation_ceiling: "80% of the total accommodation cost",
         base_price: "$27"
     },
     {
         name: "Hotel Quality Insurance",
         description: "If your accommodation does not fit the description or has bad conditions, we'll pay for an alternative accommodation",
-        component_types: "hotel",
+        component_type: "hotel",
         compensation_ceiling: "$500",
         base_price: "$23"
     }
