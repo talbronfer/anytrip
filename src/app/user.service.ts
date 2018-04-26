@@ -73,7 +73,9 @@ export class UserService {
       var relevantPolicies = this.Policies.filter((p) => p["component_type"].toLowerCase() == element.type.toLowerCase());
       element.policies = relevantPolicies;
     });
+    console.log(JSON.stringify(this.currentTrip));
     return this.currentTrip;
+    
   }
 
   getData() {

@@ -22,7 +22,7 @@
 
 
 
-    <mat-checkbox class="option-margin" *ngFor="let policy in component.policies"> {{policy.name}}</mat-checkbox>
+    <mat-checkbox class="option-margin" *ngFor="let policy of component.policies"> {{policy.name}}</mat-checkbox>
 
     <mat-action-row>
       <span class="footer-date">{{component.start_date}}</span>
