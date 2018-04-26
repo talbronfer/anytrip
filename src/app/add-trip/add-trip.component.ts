@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-trip',
@@ -8,16 +9,22 @@ import { UserService } from '../user.service';
 })
 export class AddTripComponent implements OnInit {
 
-  public isWaiting : boolean = true;
+  public isLoading : boolean = true;
 
-  constructor(private userService : UserService) {
-
+  constructor(private userService : UserService, private router : Router) {
+    this.userService.CurrentSession.on('child_changed', (a, b) => {
+      console.log("got change contification from firebase");
+      this.isLoading = false;
+      setTimeout(this.navigateToNext(), 1500);
+    });
    }
 
   ngOnInit() {
-    this.userService.CurrentSession.on('child_changed', (a, b) => {
-      this.isWaiting = false;
-    });
+
+  }
+
+  navigateToNext() {
+    this.router.navigate(['view-offer']);
   }
 
 }
