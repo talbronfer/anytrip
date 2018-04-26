@@ -37,6 +37,7 @@ import {
 export class ViewOfferComponent implements OnInit {
   step: number = 0;
   components: any[] = [{ name: "Flight" }];
+  totalPrice: number = 18.0;
 
   constructor(private userService: UserService) {}
 
@@ -59,4 +60,6 @@ export class ViewOfferComponent implements OnInit {
       this.components.push(comp);
     });
   }
+
+
 }
