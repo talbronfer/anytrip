@@ -1,25 +1,44 @@
 .login-container {
-    padding: 50px;
-    text-align: center;
-    margin-top: 25px;
+  padding: 30px;
+  text-align: center;
+  text-align: center;
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
 }
 
 mat-card-content {
-    margin-top: 25px;
-    text-align: center;
+  margin-top: 25px;
+  text-align: center;
 }
 
 .login-form {
-    text-align: center;
-    margin-top: 25px;  
-    min-width: 150px;
-    max-width: 500px;
+  text-align: center;
+  margin-top: 25px;
+  min-width: 150px;
+  /* max-width: 500px; */
 }
 
 .full-width {
-    width: 75%;
+  margin-right: 15px;
 }
 
 .mat-primary {
-    margin-top: 25px;
+  margin-top: 25px;
+}
+
+.bolbol-conatiner {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.bolbol {
+  font: 400 30px/50px "Roboto", "Helvetica Neue", sans-serif;
+  color: #4a4a4a;
+  padding: 0 0 60px 0;
+  max-width: 760px;
+  white-space: pre-wrap;
 }
