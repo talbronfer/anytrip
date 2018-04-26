@@ -22,7 +22,16 @@
 
 
 
-    <mat-checkbox class="option-margin" *ngFor="let policy of component.policies"> {{policy.name}}</mat-checkbox>
+    <mat-list>
+      <h3 mat-subheader>Policies</h3>
+      <mat-list-item *ngFor="let policy of component.policies">
+        <mat-slide-toggle class="option-margin"></mat-slide-toggle>
+        <h5 mat-line ><strong>{{policy.name}} <mat-icon class="tooltick" matTooltip="Compensation Ceiling: {{policy.compensation_ceiling}}" matTooltipPosition="above">info_outline</mat-icon></strong></h5>
+        <p mat-line class="nowrap-motherfucker"><small> {{policy.description}} </small></p>
+      </mat-list-item>
+    </mat-list>
+
+
 
     <mat-action-row>
       <span class="footer-date">{{component.start_date}}</span>

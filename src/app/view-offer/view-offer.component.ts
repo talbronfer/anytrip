@@ -38,7 +38,7 @@ import {
   ]
 })
 export class ViewOfferComponent implements OnInit {
-  step: number = 0;
+  step: number = 10;
   components: any[] = [];
   totalPrice: number = 0.0;
 
@@ -68,7 +68,6 @@ export class ViewOfferComponent implements OnInit {
 
   ngOnInit() {
     this.components = [];
-    debugger;
     let comps = this.userService.getData().components;
     console.log(comps); 
     comps.forEach(comp => {

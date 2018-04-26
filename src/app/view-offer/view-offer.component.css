@@ -93,3 +93,22 @@ mat-accordion {
     border-left: #8056c7 1px solid;
   }
 }
+
+
+.nowrap-motherfucker {
+    white-space: inherit !important;
+}
+
+h5 {
+    font-weight: 600 !important;
+}
+
+.tooltick { 
+    transform: translateY(3px);
+    font-size: 12pt;
+    color: rgb(168, 168, 168);
+}
+
+mat-list-item {
+    margin-bottom: 10px;
+}
