@@ -12,8 +12,9 @@ export class AddTripComponent implements OnInit {
   public isLoading : boolean = true;
 
   constructor(private userService : UserService, private router : Router) {
-    this.userService.CurrentSession.on('child_changed', (a, b) => {
+    this.userService.CurrentSession.on('child_changed', (ref) => {
       console.log("got change contification from firebase");
+      this.userService.currentTrip = ref.val();
       this.isLoading = false;
       setTimeout(this.navigateToNext(), 1500);
     });
