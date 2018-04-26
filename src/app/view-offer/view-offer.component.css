@@ -52,3 +52,7 @@
     font-size: 1.3em;
     font-weight: bold;
   }
+
+  .option-margin {
+      margin: 0px 10px;
+  }

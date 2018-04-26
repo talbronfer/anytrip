@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { UserService } from "../user.service";
 
 @Component({
   selector: "app-view-offer",
@@ -8,9 +9,11 @@ import { Component, OnInit } from "@angular/core";
 export class ViewOfferComponent implements OnInit {
   step : number = 0;
   components : any[] = [{name:"Flight"}];
-  constructor() {
-    
+
+  constructor(private userService: UserService ) {
   }
+
+  
 
   setStep(index: number) {
     this.step = index;
@@ -24,5 +27,7 @@ export class ViewOfferComponent implements OnInit {
     this.step--;
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.components = this.userService.getData().components;
+  }
 }
