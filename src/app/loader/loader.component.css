@@ -1,8 +1,8 @@
 .circle-loader {
     margin-bottom: 3.5em;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.2);
     border-left-color: #5cb85c;
-    animation: loader-spin 1.2s infinite linear;
+    animation: loader-spin 1.5s infinite linear;
     position: relative;
     display: inline-block;
     vertical-align: top;
@@ -16,14 +16,14 @@
     -webkit-animation: none;
     animation: none;
     border-color: #5cb85c;
-    transition: border 500ms ease-out;
+    transition: border 800ms ease-out;
   }
   
   .checkmark {
     /* display: none; */
   } 
   .checkmark.draw:after {
-    animation-duration: 800ms;
+    animation-duration: 1200ms;
     animation-timing-function: ease;
     animation-name: checkmark;
     transform: scaleX(-1) rotate(135deg);
