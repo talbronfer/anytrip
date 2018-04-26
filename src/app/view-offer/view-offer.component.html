@@ -3,13 +3,13 @@
     <mat-expansion-panel-header>
       <mat-panel-title class="component-header">
         <!-- icons  -->
-        <mat-icon *ngIf="component.type == 'Flight'">
+        <mat-icon *ngIf="component.type == 'flight'">
           flight
         </mat-icon>
-        <mat-icon *ngIf="component.type == 'Hotel'">
+        <mat-icon *ngIf="component.type == 'hotel'">
           hotel
         </mat-icon>
-        <mat-icon *ngIf="component.type == 'Car Rental'">
+        <mat-icon *ngIf="component.type == 'car rental'">
           directions_car
         </mat-icon>
         <strong>
@@ -22,9 +22,7 @@
 
 
 
-    <mat-checkbox class="option-margin"> Luggage loss coverage</mat-checkbox>
-    <mat-checkbox class="option-margin">Ticket cancellation</mat-checkbox>
-    <mat-checkbox class="option-margin">Delay compensation</mat-checkbox>
+    <mat-checkbox class="option-margin" *ngFor="let policy in component.policies"> {{policy.name}}</mat-checkbox>
 
     <mat-action-row>
       <span class="footer-date">{{component.start_date}}</span>

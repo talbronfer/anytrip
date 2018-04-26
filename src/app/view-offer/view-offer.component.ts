@@ -68,6 +68,7 @@ export class ViewOfferComponent implements OnInit {
 
   ngOnInit() {
     this.components = [];
+    debugger;
     let comps = this.userService.getData().components;
     console.log(comps); 
     comps.forEach(comp => {
