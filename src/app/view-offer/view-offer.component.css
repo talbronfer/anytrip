@@ -34,5 +34,29 @@ mat-accordion {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+}
 
+.footer-date {
+    align-self: center;
+width: 100%;
+}
+
+.checkout-footer {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    opacity: 0.95;
+    background-color:#673ab7;
+    left: 0;
+    bottom: 0;
+    display: flex;
+flex-direction: row;
+    justify-content: flex-end;
+    color:white;
+}
+
+.total-price {
+    font-size: 24pt;
+    font-family: sans-serif;
+    padding: 15px;
 }

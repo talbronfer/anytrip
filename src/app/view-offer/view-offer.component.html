@@ -20,17 +20,22 @@
       <span class="unit-price">13.66$</span>
     </mat-expansion-panel-header>
 
-    
+
 
     <mat-checkbox class="option-margin">Luggage loss coverage</mat-checkbox>
     <mat-checkbox class="option-margin">Ticket cancellation</mat-checkbox>
     <mat-checkbox class="option-margin">Delay compensation</mat-checkbox>
 
     <mat-action-row>
-        <span class="footer-date">{{component.start_date}}</span>
+      <span class="footer-date">{{component.start_date}}</span>
       <button mat-button color="warn" (click)="prevStep()">Back</button>
       <button mat-button color="primary" (click)="nextStep()">Next</button>
     </mat-action-row>
   </mat-expansion-panel>
 
 </mat-accordion>
+
+<div class="checkout-footer">
+  <div class="total-price">{{totalPrice}} $</div>
+  <button mat-raised-button color="accent"  (click)="nextStep()">Checkout </button>
+</div>
