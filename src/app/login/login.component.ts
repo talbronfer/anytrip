@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
   }
 
   start() {
-    this.userService.currentSession = this.sessions.push({ email: this.email, status: 'pending' });
+    this.userService.CurrentSession = this.sessions.push({ email: this.email, status: 'pending' });
     this.router.navigate(['add-trip']);
   }
 

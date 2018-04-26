@@ -15,7 +15,7 @@ export class AddTripComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.userService.currentSession.on('child_changed', (a, b) => {
+    this.userService.CurrentSession.on('child_changed', (a, b) => {
       this.isWaiting = false;
     });
   }
