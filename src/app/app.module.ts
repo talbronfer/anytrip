@@ -16,23 +16,33 @@ import {MatButtonModule} from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { LoaderComponent } from './loader/loader.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     AddTripComponent,
-    ViewOfferComponent
+    ViewOfferComponent,
+    LoaderComponent
   ],
   imports: [BrowserModule,
     AppRoutingModule,
     CustomMaterialModule,
     BrowserAnimationsModule,  
+    MatFormFieldModule,
     MatInputModule,
     AngularFireModule.initializeApp(environment.firebase, 'anytrip'),
     FormsModule,
     AngularFireDatabaseModule,
-    MatButtonModule],
+    MatButtonModule,
+    MatCardModule,
+  
+  ],
   providers: [UserService],
   bootstrap: [AppComponent]
 })

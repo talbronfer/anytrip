@@ -8,16 +8,17 @@ import { UserService } from '../user.service';
 })
 export class AddTripComponent implements OnInit {
 
-  public isWaiting : boolean = true;
+  public isLoading : boolean = true;
 
   constructor(private userService : UserService) {
-
+    this.userService.CurrentSession.on('child_changed', (a, b) => {
+      console.log("got change contification from firebase");
+      this.isLoading = false;
+    });
    }
 
   ngOnInit() {
-    this.userService.CurrentSession.on('child_changed', (a, b) => {
-      this.isWaiting = false;
-    });
+
   }
 
 }

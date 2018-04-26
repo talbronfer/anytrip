@@ -1,0 +1,14 @@
+.add-trip-container {
+    padding: 50px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.loader-container {
+    margin-top: 50px;
+    position: relative;
+}
+
+mat-card-content {
+    padding-top: 25px;
+}
