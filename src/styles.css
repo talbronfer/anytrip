@@ -104,4 +104,8 @@ table {
 	/* background-color: #690; */
 	color: white;
   }
-  
+	
+	.footer-date {
+		align-self: center;
+    width: 100%;
+	}

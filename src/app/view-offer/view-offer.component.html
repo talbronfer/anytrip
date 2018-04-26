@@ -18,17 +18,16 @@
       </mat-panel-title>
 
       <span class="unit-price">13.66$</span>
-      <!-- <mat-panel-description>
-            TLV to BGN
-          </mat-panel-description> -->
     </mat-expansion-panel-header>
 
+    
 
     <mat-checkbox class="option-margin">Luggage loss coverage</mat-checkbox>
     <mat-checkbox class="option-margin">Ticket cancellation</mat-checkbox>
     <mat-checkbox class="option-margin">Delay compensation</mat-checkbox>
 
     <mat-action-row>
+        <span class="footer-date">{{component.start_date}}</span>
       <button mat-button color="warn" (click)="prevStep()">Back</button>
       <button mat-button color="primary" (click)="nextStep()">Next</button>
     </mat-action-row>
