@@ -54,7 +54,7 @@ mat-card-content {
   
   .bolbol {
     font: 400 30px/50px "Roboto", "Helvetica Neue", sans-serif;
-    font-weight: 600;
+    /* font-weight: 600; */
     color: #4a4a4a;
     padding: 0 0 60px 0;
     max-width: 760px;

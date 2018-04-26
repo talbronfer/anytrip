@@ -73,5 +73,7 @@ export class ViewOfferComponent implements OnInit {
     comps.forEach(comp => {
       this.components.push(comp);
     });
+
+    setTimeout(()=>{this.step = 0}, 1700);
   }
 }

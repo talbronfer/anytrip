@@ -6,7 +6,7 @@
 
   <div class="login-container loader-container">
     <app-loader [loading]="isLoading"></app-loader>
-    <div class="sub-text">Waiting for your mail</div>
+    <div class="sub-text" *ngIf="isLoading">Waiting for your mail</div>
 </div>
   
   <!-- <mat-card class="login-container">
