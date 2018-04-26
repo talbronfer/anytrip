@@ -1,7 +1,7 @@
 .circle-loader {
     margin-bottom: 3.5em;
     border: 2px solid rgba(0, 0, 0, 0.2);
-    border-left-color: #5cb85c;
+    border-left-color: #673ab7;
     animation: loader-spin 1.5s infinite linear;
     position: relative;
     display: inline-block;
@@ -15,7 +15,7 @@
   .load-complete {
     -webkit-animation: none;
     animation: none;
-    border-color: #5cb85c;
+    border-color: #673ab7;
     transition: border 800ms ease-out;
   }
   
@@ -33,8 +33,8 @@
     height: 3.5em;
     width: 1.75em;
     transform-origin: left top;
-    border-right: 3px solid #5cb85c;
-    border-top: 3px solid #5cb85c;
+    border-right: 3px solid #673ab7;
+    border-top: 3px solid #673ab7;
     content: "";
     left: calc(50% - 1.75em);
     /* top: 3.5em; */

@@ -518,8 +518,8 @@ export class UserService {
       title: "Addis Ababa & South Africa"
     };
 
-    // return this.currentTrip;
+    return this.currentTrip;
 
-    return demo;
+    // return demo;
   }
 }

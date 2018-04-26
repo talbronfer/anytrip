@@ -1,14 +1,22 @@
-<mat-card class="add-trip-container">
-    <mat-card-header>
-      Welcome
-    </mat-card-header>
-    <mat-card-content>
-        <p>Forward all your trip's reservation emails to insure@anytrip.in.</p>
-        <div class="loader-container">
-            <app-loader [loading]="isLoading"></app-loader>
-        </div>
-        
-    </mat-card-content>
-    
-  </mat-card>
+
+  <div class="bolbol-conatiner">
+    <span class="bolbol"> Forward your trip reservation email to <strong class="strong">insure@anytrip.in</strong> We'll take it from there </span>
+  </div>
+
+
+  <div class="login-container loader-container">
+    <app-loader [loading]="isLoading"></app-loader>
+    <div class="sub-text">Waiting for your mail</div>
+</div>
   
+  <!-- <mat-card class="login-container">
+      <mat-card-content>
+        <form class="login-form">
+            <div class="loader-container">
+                <app-loader [loading]="isLoading"></app-loader>
+            </div>
+            
+        </form>
+      </mat-card-content>
+    </mat-card>
+     -->
