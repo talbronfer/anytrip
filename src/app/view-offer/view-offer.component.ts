@@ -57,11 +57,20 @@ export class ViewOfferComponent implements OnInit {
   }
 
   AddToTotal(value) {
-    this.totalPrice += value;
+    this.totalPrice += parseInt(value);
   }
 
   removeFromTotal(value) {
-    this.totalPrice -= value;
+    this.totalPrice -= parseInt(value);
+  }
+
+  hello(event,value){
+  if(event.checked){
+    this.AddToTotal(value);
+  }
+  else{
+    this.removeFromTotal(value);
+  }
   }
 
   finish() {}
@@ -74,6 +83,6 @@ export class ViewOfferComponent implements OnInit {
       this.components.push(comp);
     });
 
-    setTimeout(()=>{this.step = 0}, 1700);
+    setTimeout(()=>{this.step = 0}, 2100);
   }
 }
