@@ -79,6 +79,7 @@ export class UserService {
         p => p["component_type"].toLowerCase() == element.type.toLowerCase()
       );
       element.policies = relevantPolicies;
+      element.localSum = 0;
     });
     console.log(JSON.stringify(this.currentTrip));
     return this.currentTrip;
@@ -93,6 +94,7 @@ export class UserService {
           provider: "Ethiopian",
           start_date: "Feb 28, 2018, 12:34 AM",
           type: "flight",
+          localSum : 0,
           policies: [
             {
               name: "Free Cancellation Guarantee",
@@ -134,6 +136,7 @@ export class UserService {
           provider: "Once in Cape Town",
           start_date: "Feb 28",
           type: "hotel",
+          localSum : 0,
           policies: [
             {
               name: "Free Hotel Cancellation",
@@ -162,6 +165,7 @@ export class UserService {
           provider: "Hertz",
           start_date: "Mar 3, 2018, 9:30 AM",
           type: "car rental",
+          localSum : 0,
           policies: [
             {
               name: "Deductible Waiver",
@@ -189,6 +193,7 @@ export class UserService {
           provider: "Europcar",
           start_date: "Mar 4, 2018, 10:00 AM",
           type: "car rental",
+          localSum : 0,
           policies: [
             {
               name: "Deductible Waiver",
@@ -213,6 +218,7 @@ export class UserService {
           provider: "House of Two Oceans",
           start_date: "Mar 4",
           type: "hotel",
+          localSum : 0,
           policies: [
             {
               name: "Free Hotel Cancellation",
@@ -238,6 +244,7 @@ export class UserService {
           provider: "Afrovibe Adventure Lodge",
           start_date: "Mar 5",
           type: "hotel",
+          localSum : 0,
           policies: [
             {
               name: "Free Hotel Cancellation",
@@ -263,6 +270,7 @@ export class UserService {
           provider: "Riversong Cottages",
           start_date: "Mar 8",
           type: "hotel",
+          localSum : 0,
           policies: [
             {
               name: "Free Hotel Cancellation",
@@ -291,6 +299,7 @@ export class UserService {
           provider: "Buccaneers Lodge & Backpackers, Chintsa",
           start_date: "Mar 11",
           type: "hotel",
+          localSum : 0,
           policies: [
             {
               name: "Free Hotel Cancellation",
@@ -316,6 +325,7 @@ export class UserService {
           provider: "Safair",
           start_date: "Mar 13, 2018, 9:10 AM",
           type: "flight",
+          localSum : 0,
           policies: [
             {
               name: "Free Cancellation Guarantee",
@@ -360,6 +370,7 @@ export class UserService {
           provider: "Rentalcars.com",
           start_date: "Mar 13, 2018, 10:00 AM",
           type: "car rental",
+          localSum : 0,
           policies: []
         },
         {
@@ -368,6 +379,7 @@ export class UserService {
           provider: "Modern Sandton Stunner",
           start_date: "Mar 13",
           type: "hotel",
+          localSum : 0,
           policies: [
             {
               name: "Free Hotel Cancellation",
@@ -393,6 +405,7 @@ export class UserService {
           provider: "ASKY",
           start_date: "Mar 15, 2018, 2:10 PM",
           type: "flight",
+          localSum : 0,
           policies: [
             {
               name: "Free Cancellation Guarantee",
@@ -434,6 +447,7 @@ export class UserService {
           provider: "Ethiopian",
           start_date: "Mar 15, 2018, 11:50 PM",
           type: "flight",
+          localSum : 0,
           policies: [
             {
               name: "Free Cancellation Guarantee",
@@ -475,6 +489,7 @@ export class UserService {
           provider: "Ethiopian",
           start_date: "Mar 15, 2018, 11:50 PM",
           type: "flight",
+          localSum : 0,
           policies: [
             {
               name: "Free Cancellation Guarantee",

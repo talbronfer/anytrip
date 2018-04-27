@@ -64,12 +64,14 @@ export class ViewOfferComponent implements OnInit {
     this.totalPrice -= parseInt(value);
   }
 
-  hello(event,value){
+  hello(event,value,component){
   if(event.checked){
     this.AddToTotal(value);
+    component.localSum += parseInt(value);
   }
   else{
     this.removeFromTotal(value);
+    component.localSum -= parseInt(value);
   }
   }
 
