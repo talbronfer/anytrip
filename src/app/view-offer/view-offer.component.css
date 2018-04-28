@@ -104,11 +104,11 @@ mat-accordion {
   }
 }
 .policy-name {
-  font-size: 0.8em !important;
+  /* font-size: 0.8em !important; */
 }
 .nowrap-motherfucker {
   white-space: inherit !important;
-  font-size: 0.7em !important;
+  /* font-size: 0.7em !important; */
 }
 
 h5 {
@@ -126,7 +126,7 @@ mat-list-item {
 }
 
 h5 {
-  font-size: 0.8em;
+  /* font-size: 0.8em; */
 }
 
 .mat-line.p {
@@ -141,7 +141,7 @@ h5 {
 
 .header-subtitle {
   color: grey;
-  font-size: 0.7em;
+  font-size: 0.9em;
   line-height: 5px;
   margin-top: 5px;
   margin-bottom: 5px;

@@ -5,7 +5,7 @@
   width: 350px;
   height: 100px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 mat-card-content {
@@ -32,14 +32,15 @@ mat-card-content {
   flex-flow: column;
   align-items: center;
   padding: 0 0 60px 0;
-  margin-top: 25px;
+  margin-top: 50px;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .bolbol {
-  font: 400 30px/50px 'Raleway', sans-serif;
+  font: 400 40px/50px 'Raleway', sans-serif;
   color: #4a4a4a;
-
+  margin-bottom: 25px;
   max-width: 760px;
   white-space: pre-wrap;
 }

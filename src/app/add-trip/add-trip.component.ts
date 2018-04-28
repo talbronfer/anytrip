@@ -114,7 +114,7 @@ export class AddTripComponent implements OnInit {
             end_date: "Mar 14, 2018, 10:00 AM",
             location: {
               coordinates: "34",
-              name: "34 Prestwich St, De Waterkant, Cape Town 8001, South Africa"
+              name: "Cape Town, South Africa"
             },
             provider: "Europcar",
             start_date: "Mar 4, 2018, 10:00 AM",
