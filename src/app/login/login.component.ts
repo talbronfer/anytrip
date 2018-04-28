@@ -21,10 +21,11 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     // this.sessions = this.db.list('/sessions');
-    this.activatedRoute.queryParams.subscribe((params) => {
-      let demoMode = params.demoMode;
-      this.userService.demoMode = demoMode;
-    })
+    // this.activatedRoute.queryParams.subscribe((params) => {
+    //   let demoMode = params.demoMode;
+    //   this.userService.demoMode = demoMode;
+    // })
+    this.userService.demoMode = true;
   }
 
   start() {
