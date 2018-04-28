@@ -36,9 +36,9 @@ import { LoaderComponent } from './loader/loader.component';
     BrowserAnimationsModule,  
     MatFormFieldModule,
     MatInputModule,
-    AngularFireModule.initializeApp(environment.firebase, 'anytrip'),
+    // AngularFireModule.initializeApp(environment.firebase, 'anytrip'),
     FormsModule,
-    AngularFireDatabaseModule,
+    // AngularFireDatabaseModule,
     MatButtonModule,
     MatCardModule,
   
