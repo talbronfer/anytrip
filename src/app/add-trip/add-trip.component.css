@@ -16,11 +16,11 @@ mat-card-content {
 
 
 .login-container {
-    padding: 30px;
+    padding-top: 30px;
     text-align: center;
     text-align: center;
     width: 350px;
-    height: auto;
+    height: 140px;
     margin: 0 auto;
   }
   
@@ -53,10 +53,10 @@ mat-card-content {
   }
   
   .bolbol {
-    font: 400 30px/50px "Roboto", "Helvetica Neue", sans-serif;
+    font: 400 30px/50px 'Raleway', sans-serif;
     /* font-weight: 600; */
     color: #4a4a4a;
-    padding: 0 0 60px 0;
+    /* padding: 0 0 60px 0; */
     max-width: 760px;
     white-space: pre-wrap;
   }
@@ -68,10 +68,31 @@ mat-card-content {
   }
 
   .sub-text {
-      font-family: "Roboto", "Helvetica Neue", sans-serif;
+      font-family: 'Raleway', sans-serif;
       text-transform: uppercase;
       font-size: 11pt;
       color: #666666;
 
   }
   
+  .email-types {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .type {
+
+  }
+
+  .email-type-title {
+    text-align: center;
+  }
+
+  .type-img {
+    margin-bottom: 15px;
+
+  }

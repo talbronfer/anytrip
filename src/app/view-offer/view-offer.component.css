@@ -10,16 +10,25 @@ h1 {
 }
 
 .component-header {
-  line-height: 30px;
+  /* line-height: 30px; */
 }
 
 .unit-price {
-  color: green;
+  color: #663AB7;
   padding-top: 7px;
 }
 
 .component-header mat-icon {
   margin-right: 10px;
+}
+
+mat-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+mat-icon {
+  color: #FFD73F;
 }
 
 .mat-expansion-panel {
@@ -94,9 +103,12 @@ mat-accordion {
     border-left: #8056c7 1px solid;
   }
 }
-
+.policy-name {
+  font-size: 0.8em !important;
+}
 .nowrap-motherfucker {
   white-space: inherit !important;
+  font-size: 0.7em !important;
 }
 
 h5 {
@@ -110,11 +122,32 @@ h5 {
 }
 
 mat-list-item {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+}
+
+h5 {
+  font-size: 0.8em;
+}
+
+.mat-line.p {
+  font-size: inherit !important;
 }
 
 .flex-col {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.header-subtitle {
+  color: grey;
+  font-size: 0.7em;
+  line-height: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  
+}
+
+.smaller {
+  font-size: 0.8em;
 }

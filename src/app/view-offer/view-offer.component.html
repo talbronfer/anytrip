@@ -1,7 +1,7 @@
 <mat-accordion [@listAnimation]="components.length">
   <mat-expansion-panel *ngFor="let component of components;  let i = index" [expanded]="step === i" (opened)="setStep(i)" hideToggle="true">
     <mat-expansion-panel-header>
-      <mat-panel-title class="component-header">
+      <mat-panel-title class="component-header nice-font">
         <!-- icons  -->
         <mat-icon *ngIf="component.type == 'flight'">
           flight
@@ -14,6 +14,15 @@
         </mat-icon>
         <strong>
           {{component.provider}}
+          <div *ngIf="component.type == 'flight'" class="header-subtitle">
+            {{ component.location.departure }} → {{ component.location.arrival }}
+          </div>
+          <div *ngIf="component.type == 'hotel'" class="header-subtitle">
+            {{ component.location.name }}
+          </div>
+          <div *ngIf="component.type == 'car rental'" class="header-subtitle">
+            {{ component.location.name }}
+          </div>
         </strong>
       </mat-panel-title>
 
@@ -29,7 +38,7 @@
             <span class="unit-price smaller">{{policy.base_price}}$</span>
           <mat-slide-toggle class="option-margin"  (change)="hello($event,policy.base_price,component)"></mat-slide-toggle>
         </div>
-        <h5 mat-line ><strong>{{policy.name}} <mat-icon class="tooltick" matTooltip="Compensation Ceiling: {{policy.compensation_ceiling}}" matTooltipPosition="above">info_outline</mat-icon></strong></h5>
+        <h5 class="policy-name" mat-line ><strong>{{policy.name}} <mat-icon class="tooltick" matTooltip="Compensation Ceiling: {{policy.compensation_ceiling}}" matTooltipPosition="above">info_outline</mat-icon></strong></h5>
         <p mat-line class="nowrap-motherfucker"><small> {{policy.description}} </small></p>
       </mat-list-item>
     </mat-list>

@@ -1,22 +1,29 @@
 
   <div class="bolbol-conatiner">
-    <span class="bolbol"> Forward your trip reservation email to <strong class="strong">insure@anytrip.in</strong> We'll take it from there </span>
+    <span class="bolbol"> Forward your reservations to <strong class="strong">insure@anytrip.in</strong></span>
   </div>
 
 
   <div class="login-container loader-container">
     <app-loader [loading]="isLoading"></app-loader>
-    <div class="sub-text" *ngIf="isLoading">Waiting for your mail</div>
+    <!-- <div class="sub-text" *ngIf="isLoading">Waiting for your mail</div> -->
 </div>
-  
-  <!-- <mat-card class="login-container">
-      <mat-card-content>
-        <form class="login-form">
-            <div class="loader-container">
-                <app-loader [loading]="isLoading"></app-loader>
-            </div>
-            
-        </form>
-      </mat-card-content>
-    </mat-card>
-     -->
+
+<div class="email-types">
+    <div class="email-type-title">
+      <img class="type-img" src="assets/airplane-type.png"/>
+      <h5>Flights</h5>
+    </div>
+    <div class="email-type-title">
+      <img class="type-img" src="assets/hotel-type.png" />
+      <h5>Hotels</h5>
+    </div>
+    <div class="email-type-title">
+      <img class="type-img" src="assets/car-type.png" />
+      <h5>Rental Cars</h5>
+    </div>
+    <div class="email-type-title">
+      <img class="type-img" src="assets/event-type.png" />
+      <h5>Events</h5>
+    </div>
+  </div>
